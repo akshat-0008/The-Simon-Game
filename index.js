@@ -45,7 +45,7 @@ function checkAnswer(currentlevel){
         }
     }
     else{
-        var gameOver = new Audio("/sounds/wrong.mp3");
+        var gameOver = new Audio("assets/sounds/wrong.mp3");
         gameOver.play();
         $("body").addClass("game-over");
         $("#level-title").text("Game Over, Press any key to restart")
@@ -64,7 +64,7 @@ function startOver(){
 }
 
 function playTrack(randomColor){
-    var audio = new Audio("/assets/sounds/"+randomColor+".mp3");
+    var audio = new Audio("assets/sounds/"+randomColor+".mp3");
             audio.play();
 }
 
